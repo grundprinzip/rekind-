@@ -1,0 +1,27 @@
+#appname:BeKind-Rekind!
+#appid:de.grundprinzip.rekind
+#publisher:grund
+#image:default_app_logo.png
+#url:http://punchcard.wordpress.com
+#guid:34063f1a-8e6d-4144-92c1-375589def624
+#desc:No description provided
+#type:desktop
+runtime:0.8.0
+api:0.8.0
+tiapp:0.8.0
+tifilesystem:0.8.0
+tiplatform:0.8.0
+tiui:0.8.0
+javascript:0.8.0
+tianalytics:0.8.0
+python:0.8.0
+ticodec:0.8.0
+tidatabase:0.8.0
+tidesktop:0.8.0
+tigrowl:0.8.0
+timedia:0.8.0
+timonkey:0.8.0
+tinetwork:0.8.0
+tinotification:0.8.0
+tiprocess:0.8.0
+tiworker:0.8.0
