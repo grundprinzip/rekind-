@@ -1,12 +1,10 @@
 <html>
 <head>
+  <link href="style.css" rel="stylesheet" type="text/css" media="all" />
   <script type="text/javascript" src="prototype-1.6.0.js"></script>
   <script type="text/javascript" src="scriptaculous-1.8.2.js"></script>
   <script type="text/javascript" src="main.js"></script>
-
-  <script type="text/python">
-    import rekindle
-  </script>
+  <script type="text/python" src="handler.py"></script>
 
   <title>Re-kind!</title>
 </head>
@@ -18,14 +16,21 @@
       is split into multiple parts and aligned in correct order.</p>
     <p>To add files for processing, drag-and-drop them on the dropbox</p>
     <p>Choose all files you want to re-kind</p>
-    <div id="dropbox" style="width:300px;height:200px;background-color:red;-webkit-user-drop: element;">
+    <div id="dropbox">
+      <h2>Drop Files here!</h2>
       <ul id ="fidlist">
 	
       </ul>
     </div>
-    <button id="action">Rekind</button>
+    <div id="progress"></div>
+    <div id="bar">
+      <button id="action">Rekind</button>
+      <button id="logb">Show Log</button>
+    </div>
+    <div id="log"></div>
   </div>
   <script type="text/javascript">
+    var all_files = [];
     setup();
   </script>
 </body>
