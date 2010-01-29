@@ -2,6 +2,12 @@
 <head>
   <script type="text/javascript" src="prototype-1.6.0.js"></script>
   <script type="text/javascript" src="scriptaculous-1.8.2.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+  <script type="text/python">
+    import rekindle
+  </script>
+
   <title>Re-kind!</title>
 </head>
 <body style="" id="bd">
@@ -13,22 +19,14 @@
     <p>To add files for processing, drag-and-drop them on the dropbox</p>
     <p>Choose all files you want to re-kind</p>
     <div id="dropbox" style="width:300px;height:200px;background-color:red;-webkit-user-drop: element;">
+      <ul id ="fidlist">
+	
+      </ul>
     </div>
-    <script type="text/javascript">
-      var target = document.getElementById("dropbox");
-      target.addEventListener("dragenter", function(event) {
-      event.preventDefault();
-      return true;
-      });
-      target.addEventListener("dragover", function(event) {
-      event.preventDefault();
-      return true;
-      });
-      target.addEventListener("drop", function(event) {
-      alert(1);
-    });
-
-    </script>
+    <button id="action">Rekind</button>
   </div>
+  <script type="text/javascript">
+    setup();
+  </script>
 </body>
 </html>
